@@ -1,21 +1,23 @@
-# Lumen PHP Framework
+# [Lumen 5.8 Boilerplate]
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+A boilerplate made from [Lumen 5.8.*](https://lumen.laravel.com/), authenticated with [laravel/passport](https://github.com/laravel/passport)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+### Installing
 
-## Security Vulnerabilities
+- after cloning/downloding this repo, first open to terminal then change directory to a project directory.
+- sample, in linux, `cd lumen-boilerplate`.
+- run `composer install` to install project dependencies.
+- copy `.env.example` to `.env`. (dont just rename it), for team reference purpose.
+- prepare you environment in `.env`
+- run `php artisan key:generate`, this will generate key in .env file
+- run `php artisan migrate` and `php artisan db:seed`, this will migrate your database and example data user, 
+- run `php artisan passport:install` to install credential laravel passport.
+- if you not familiar with  [laravel/passport](https://github.com/laravel/passport), you must see  [this](https://github.com/laravel/passport) first.
+- how to login? see [laravel/passport](https://github.com/laravel/passport)
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License 
